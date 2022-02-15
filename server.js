@@ -163,7 +163,20 @@ router.route('/movies')
     }
     );
 
+// rejecting requests made to the base url
 router.get('/', function (req, res){
+    res.send("Invaild path. Page not found.")
+}
+);
+router.post('/', function (req, res){
+    res.send("Invaild path. Page not found.")
+}
+);
+router.put('/', function (req, res){
+    res.send("Invaild path. Page not found.")
+}
+);
+router.delete('/', function (req, res){
     res.send("Invaild path. Page not found.")
 }
 );
