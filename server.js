@@ -163,7 +163,10 @@ router.route('/movies')
     }
     );
 
-
+router.get('/', function (req, res){
+    res.send("Invaild path. Page not found.")
+}
+);
 
 
 app.use('/', router);
